@@ -12,10 +12,10 @@ class Rectangle:
     def calculate_area(self):
         return self.length * self.width
 
-    def _str_(self):
+    def __str__(self):
         return f"rectangle, {self.length} cm long, and {self.width} cm wide"
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     try:
         rect = Rectangle(3, 2)
         print(rect)
@@ -23,3 +23,5 @@ if _name_ == "_main_":
         print(f"Keliling: {circumference} cm")
         area = rect.calculate_area()
         print(f"Luas: {area} cm²")
+    except ValueError as e:
+        print(f"Error: {e}")

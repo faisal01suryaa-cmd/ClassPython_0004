@@ -16,3 +16,5 @@ class Rectangle:
         return f"rectangle, {self.length} cm long, and {self.width} cm wide"
 
 if _name_ == "_main_":
+    try:
+        rect = Rectangle(3, 2)

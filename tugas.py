@@ -18,3 +18,8 @@ class Rectangle:
 if _name_ == "_main_":
     try:
         rect = Rectangle(3, 2)
+        print(rect)
+        circumference = rect.calculate_circumference()
+        print(f"Keliling: {circumference} cm")
+        area = rect.calculate_area()
+        print(f"Luas: {area} cm²")

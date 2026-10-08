@@ -14,3 +14,5 @@ class Rectangle:
 
     def _str_(self):
         return f"rectangle, {self.length} cm long, and {self.width} cm wide"
+
+if _name_ == "_main_":
